@@ -1,0 +1,28 @@
+.error-boundary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    color: var(--gray-text);
+}
+.inner-boundary {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme-bg);
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+.error-boundary  .img-loaded {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin-bottom: -40px;
+
+}
+.error-boundary h1 {
+    
+}

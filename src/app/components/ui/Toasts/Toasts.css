@@ -1,0 +1,151 @@
+:root {
+    --toastify-color-light: var(--theme-color);
+    --toastify-color-dark: #121212;
+    --toastify-color-info: #3498db;
+    --toastify-color-success: var(--green);
+    --toastify-color-warning: #f1c40f;
+    --toastify-color-error: var(--red);
+    --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+  
+    --toastify-icon-color-info: #fff;
+    --toastify-icon-color-success: var(--toastify-color-success);
+    --toastify-icon-color-warning: var(--toastify-color-warning);
+    --toastify-icon-color-error: var(--toastify-color-error);
+  
+    --toastify-toast-width: 320px;
+    --toastify-toast-background: #fff;
+    --toastify-toast-min-height: 54px;
+    --toastify-toast-max-height: 800px;
+    --toastify-font-family: sans-serif;
+    --toastify-z-index: 9999;
+  
+    --toastify-text-color-light: #fff;
+    --toastify-text-color-dark: #fff;
+  
+    --toastify-text-color-info: #fff;
+    --toastify-text-color-success: #fff;
+    --toastify-text-color-warning: #fff;
+    --toastify-text-color-error: #fff;
+  
+    --toastify-spinner-color: #616161;
+    --toastify-spinner-color-empty-area: #e0e0e0;
+  
+
+    --toastify-color-progress-light: linear-gradient(
+      to right,
+      #4cd964,
+      #5ac8fa,
+      #007aff,
+      #34aadc,
+      #5856d6,
+      #ff2d55
+    );
+    --toastify-color-progress-dark: #bb86fc;
+    --toastify-color-progress-info: var(--toastify-color-info);
+    --toastify-color-progress-success: var(--toastify-color-success);
+    --toastify-color-progress-warning: var(--toastify-color-warning);
+    --toastify-color-progress-error: var(--toastify-color-error);
+  }
+  /** Used to define container behavior: width, position: fixed etc... **/
+.Toastify__toast-container {
+}
+
+/** Used to define the position of the ToastContainer **/
+.Toastify__toast-container--top-left {
+}
+.Toastify__toast-container--top-center {
+}
+.Toastify__toast-container--top-right {
+}
+.Toastify__toast-container--bottom-left {
+}
+.Toastify__toast-container--bottom-center {
+}
+.Toastify__toast-container--bottom-right {
+}
+
+/** Classes for the displayed toast **/
+.Toastify__toast {
+    border-radius: var(--border-radius);
+
+}
+.Toastify__toast--rtl {
+}
+.Toastify__toast-body {
+}
+
+/** Used to position the icon **/
+.Toastify__toast-icon {
+}
+
+/** handle the notification color and the text color based on the theme **/
+.Toastify__toast-theme--dark {
+}
+.Toastify__toast-theme--light {
+}
+Toastify__toast--default {
+  background-color: var(--theme-color);
+  color: #fff
+}
+.Toastify__toast--info {
+  background-color: var(--theme-color);
+  color: #fff
+}
+.Toastify__toast--success {
+  background-color: var(--green-bg);
+  color: var(--green);
+}
+.Toastify__toast--warning {
+  background-color: var(--yellow-bg);
+  color: var(--yellow);
+}
+.Toastify__toast--error {
+  background-color: var(--red-bg);
+  color: var(--red);
+}
+
+.Toastify__progress-bar {
+}
+.Toastify__progress-bar--rtl {
+}
+.Toastify__progress-bar-theme--light {
+}
+.Toastify__progress-bar-theme--dark {
+}
+.Toastify__progress-bar--info {
+}
+.Toastify__progress-bar--success {
+}
+.Toastify__progress-bar--warning {
+}
+.Toastify__progress-bar--error {
+}
+/** colored notifications share the same progress bar color **/
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--info,
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--success,
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning,
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--error {
+}
+
+/** Classes for the close button. Better use your own closeButton **/
+.Toastify__close-button {
+    width: 40px;
+}
+.Toastify__close-button--default {
+}
+.Toastify__close-button > svg {
+}
+.Toastify__close-button:hover,
+.Toastify__close-button:focus {
+}
+.close-toast-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--transparent-bg);
+    border-radius: var(--border-radius);
+    align-items: center;
+    margin: auto 0;
+    font-weight: bold;
+}

@@ -1,0 +1,17 @@
+.dashboard-layout {
+    padding: 20px;
+    max-height: calc(100dvh - 60px);
+    overflow-y: auto;
+    padding-top: 10px;
+}
+.dashboard-layout .layoutheader h2 {
+    color: var(--gray-text);
+    margin: 10px 0;
+}
+/* .compact .innerLayout {
+    max-height: calc(100dvh - 167px);
+}
+.innerLayout {
+    overflow: auto;
+    width: calc(100% - 20px);
+} */

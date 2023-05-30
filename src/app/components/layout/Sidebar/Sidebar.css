@@ -1,0 +1,91 @@
+.dashboardsidebar {
+    box-shadow: var(--card-shadow);
+    padding: 20px;
+    background-color: var(--plain-bg);
+    min-width: 250px;
+    max-width: 250px;
+}
+.sidebarlinks {
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.sidebarlink {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--gray-text);
+    border-radius: var(--border-radius);
+}
+.compact .sidebarlink {
+    padding: 10px 15px;
+}
+.linkwrapper {
+    transition: all 0.3s;
+    border-radius: var(--border-radius);
+}
+.sidebarlink:hover, .linkwrapper.active, .linkwrapper:hover {
+    /* background-color: var(--theme-color);
+    color: #fff; */
+    background-color: var(--theme-bg);
+}
+.sidebarlink.activelink {
+    background-color: var(--theme-color);
+}
+.sidebarlink.activelink i, .sidebarlink.activelink span {
+    color: #fff;
+}
+.linkwrapper.active .sidebarlink {
+    box-shadow: none;
+    background-color: initial;
+}
+.sidebarlink.activelink {
+    color: var(--theme-color);
+}
+.dashboardsidebar .sidebar-img {
+    width: 100%;
+    background-color: var(--theme-bg);
+    padding: 35px 5px;
+}
+.sidebar-img svg {
+    width: 100%;
+    height: 100%;
+}
+.dashboardsidebar .bottomsection button {
+    width: 100%;
+}
+.bottomsection a {
+    margin-bottom: 20px;
+}
+.sidebarlink > div:first-of-type {
+    width: 100%;
+}
+.sidebarlink .fa-chevron-right {
+    /* width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    border-radius: 50%; */
+    transition: all 0.3s;
+}
+.arrowcont {
+    width: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.activearrow {
+    transform: rotate(90deg);
+}
+.sublinks {
+    padding-left: 46px;
+}
+.sublinks a {
+    color: var(--gray-text);
+    padding: 10px 0;
+}
+.sublinks a:hover, .sublinks .activesublink {
+    text-decoration: underline;
+    color: var(--theme-color);
+}

@@ -1,0 +1,59 @@
+.user {
+    cursor: pointer;
+}
+.user .img-loaded {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .user i {
+
+  }
+  .user img {
+    border-radius: 50%;
+  }
+  .name-msg {
+    gap: 1px;
+    margin-left: 10px;
+  }
+   .name-msg a {
+    color: var(--gray-text);
+    font-weight: bold;
+  }
+  .name-msg a:hover {
+    color: var(--theme-color);
+    text-decoration: underline;
+  }
+  .user .name-msg span {
+    font-size: 13px;
+  }
+  .group-imgs {
+    width: 30px;
+    height: 30px;
+  }
+  .group-imgs .img-loaded {
+    position: absolute;
+  }
+  #root .group-imgs .img-loaded {
+    width: calc(40px);
+    height: calc(40px);
+  }
+  .group-imgs .img-loaded:first-of-type {
+    right: 0
+  }
+  .group-imgs .img-loaded:nth-of-type(2) {
+    bottom: -5px;
+    left: -5px;
+  }
+  .user-icon-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+  }
+  .user-icon-placeholder i {
+    font-size: 22px
+  }
+  .drop-users .user-icon-placeholder i {
+    font-size: 16px
+  }

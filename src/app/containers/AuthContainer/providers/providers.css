@@ -1,0 +1,54 @@
+
+.auth-providers {
+    display: flex;
+    gap: 10px;
+  }
+  .auth-providers > * {
+    width: auto
+  }
+  .googlebtn{
+    border-radius: var(--border-radius);
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    height: 60px;
+    width: 100%;
+    border: solid 1px #eee;
+  }
+  .facebookbtn {
+    color: #1877f2;
+    font-size: 11px;
+  }
+  .googlebtn:active {
+    transform: scale(0.98)
+  }
+  .googlebtn:hover {
+    background-color: rgb(243, 243, 243)
+  }
+  .facebookbtn:hover {
+  }
+  .googlebtn span {
+    font-size: 15px
+  }
+  .googlebtn img {
+    width: 25px;
+    height: 25px
+  }
+  @media (max-width: 720px) {
+    .auth-providers {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 550px) {
+    .form-btns {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .form-btns button {
+      width: 100%;
+    }
+  }

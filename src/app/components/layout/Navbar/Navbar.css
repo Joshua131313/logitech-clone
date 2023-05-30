@@ -1,0 +1,140 @@
+.compact .navbar {
+    height: 50px;
+}
+.compact .navbar svg {
+    height: 50px;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 2rem;
+    align-items: center;
+
+    z-index: 1000;
+}
+.navbar h1 {
+    font-size: 2rem;
+}
+.hexagon, .shapes {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    border-radius: 0 0 20px 20px;
+}
+.navbar .appinput {
+    width: 120px;
+    height: 100%;
+}
+.searchcontainer {
+    height: 40px;
+}
+.nav-search-container div {
+    display: flex;
+    align-items: center;
+}
+.searchcontainer i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+.compact .navbar input {
+    height: 30px;
+}
+.navbar input {
+    background-color: transparent;
+    border: 1px solid hsla(0,0%,100%,.4);
+    margin-top: 0;
+    color: #fff;
+    border-radius: var(--border-radius);
+    padding: 8px 16px;
+    font-size: 14px;
+    height: initial;
+    width: 80%;
+    height: 36px;
+}
+.navbar input::placeholder {
+    color: #ddd;
+    font-weight: lighter;
+}
+.searchcontainer input {
+    transition: all 0.3s;
+}
+.searchcontainer input:focus {
+    width: 100%;
+}
+.searchcontainer input + .right-icon {
+    right: 25%;
+    color: #fff
+}
+.searchcontainer input:focus + .right-icon {
+        right: 5%;
+}
+.compact .navbar .user .img-loaded, .compact .navbar .user i {
+    width: 35px;
+    height: 35px;
+}
+.searchcontainer .appinput .flex-col {
+    height: 100%;
+}
+.navbaroptions {
+    gap: 20px;
+}
+.compact .navbaroptions .app-button {
+    height: 30px;
+}
+.navbaroptions .app-button {
+    box-shadow: none;
+    background-color: transparent;
+    border: solid 1px;
+    border-radius: var(--border-radius);
+    padding: 8px 16px;
+    font-size: 14px;
+}
+.navbaroptions .app-button:hover, .active-drop .app-button {
+    background-color: var(--plain-bg);
+    border-color: var(--plain-bg);
+    color: var(--theme-color);
+}
+.navbaroptions .app-button:hover i, .active-drop .app-button i {
+    color: var(--theme-color);
+}
+
+.navbaroptions .fa-bell {
+    color: #fff;
+}
+.navbaroptions > i {
+    width: 40px;
+    height: 40px;
+}
+.navbaroptions .dropoption i {
+    color: var(--theme-color);
+}
+.navbar .appinput > div {
+    height: 100%;
+}
+body .badge-icon {
+    position: absolute;
+    font-size: 10px;
+    background-color: var(--plain-bg);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--theme-color);
+    z-index: 100;
+    top: -5px;
+    right: -5px;
+}
+.navbar .controls {
+}
+.navbar .divider {
+    background-color: #cccccc;
+    width: 1px;
+    height: 20px;
+    margin: 0 20px;
+}

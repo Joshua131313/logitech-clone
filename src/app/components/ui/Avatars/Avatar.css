@@ -1,0 +1,31 @@
+.user-avatar {
+    display: flex;
+    align-self: flex-start;
+    border: solid 2px var(--plain-bg);
+    border-radius: 50%;
+
+}
+.avatar-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.update-avatar i {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-shadow: var(--card-shadow);
+    width: 30px;
+    height: 30px;
+    background-color: var(--plain-bg);
+    color: var(--gray-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.update-avatar:hover img {
+    filter: brightness(95%);
+}

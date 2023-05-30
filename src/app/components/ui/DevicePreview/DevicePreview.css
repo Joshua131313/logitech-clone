@@ -1,0 +1,37 @@
+.device-preview {
+    width: 320px;
+    max-width: 90%;
+    align-items: center;
+    gap: 20px;
+}
+.device-preview img:hover {
+    transform: translateY(-10px);
+}
+.device-preview img {
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(15px 15px 14px rgb(145, 145, 145));
+}
+.battery-button {
+    border: solid 1px #f0f0f0;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+.battery-button .battery-icon {
+    transform: rotate(-90deg);
+    font-size: 13px;
+}
+.battery-button .battery-icon, .battery-button span {
+    color: var(--green);
+}  
+.battery-button:hover {
+    background-color: var(--green);
+    color: #fff;
+}
+.battery-button:hover .battery-icon, .battery-button:hover span {
+    color: #fff;
+}

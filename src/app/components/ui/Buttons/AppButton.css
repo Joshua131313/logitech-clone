@@ -1,0 +1,41 @@
+.app-button {
+    color: #fff;
+    background-color: var(--theme-color);
+    height: 36px;
+    padding: 0 16px;
+    min-width: 64dp;
+    border-radius: var(--border-radius);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.app-button:disabled {
+
+}
+.app-button:hover {
+    background-color: var(--theme-color-hover);
+}
+.app-button:active {
+    transform: scale(0.98);
+}
+.app-button.reverse {
+    flex-direction: row-reverse;
+}
+.app-button.secondary {
+    background-color: transparent;
+    color: #000;
+    border: solid 1px transparent;
+    font-weight: bold;
+    height: 44px;
+}
+.app-button.secondary i {
+    font-size: 18px;
+}
+.app-button.secondary span {
+    font-size: 15px;
+}
+.app-button.secondary:hover {
+    border: solid 1px var(--second-color);
+    background-color: var(--light-theme-bg);
+    color: var(--theme-color);
+}

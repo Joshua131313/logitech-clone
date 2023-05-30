@@ -1,0 +1,5 @@
+export type TProvider = 'Google' | 'Facebook' | 'Email'
+export type TNotificationType = 'welcome'
+export type TUserCollections = ''
+export type TCompact = 'compact' | 'default'
+export type TTheme = 'default' | 'midnight' | 'gold' | 'royal' | 'leaf' 

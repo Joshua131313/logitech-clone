@@ -1,0 +1,104 @@
+.dashboardcontainer {
+    height: 100dvh;
+    background-color: var(--plain-bg);
+    display: flex;
+    flex-direction: column;
+}
+.dashboardcontent {
+    width: calc(100% - 250px);
+    overflow-y: auto;
+}
+.overviewblocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+    margin-top: 20px;
+ }
+ @media (max-width: 800px) {
+    .dashboardcontainer .dashboardsidebar {
+       min-width: 200px;
+       max-width: 200px;
+    }
+    .dashboardcontainer .dashboardcontent {
+       width: calc(100% - 200px);
+    }
+ }
+ @media (max-width: 700px) {
+    .dashboardcontainer {
+       /* flex-direction: column-reverse;
+       display: grid;
+       grid-template-rows: 1fr 85px; */
+    }
+    .dashboardcontainer .dashboardcontent {
+       width: 100%;
+    }
+    .dashboardcontainer .dashboardsidebar {
+       min-width: initial;
+       max-width: initial;
+       width: 100%;
+       flex-direction: row;
+       grid-row: 2/-1;
+       box-shadow: var(--light-shadow);
+    }
+    .dashboardcontainer .dashboardsidebar > .flex-col {
+       width: 100%;
+       align-items: center;
+       justify-content: center;
+    }
+    .dashboardcontainer .dashboardsidebar .bottomsection, .dashboardcontainer .dashboardsidebar .logo {
+       display: none;
+    }
+    .dashboardsidebar .sidebarlinks {
+       margin-top: 0;
+       width: 100%;
+       justify-content: space-evenly;
+       flex-direction: row;
+    }
+    .sidebarlinks {
+       gap: 4px;
+    }
+    .dashboardsidebar .sidebarlink {
+       padding: 0
+    }
+    .sidebarlink span, .sidebarlink i {
+       font-size: 15px;
+    }
+    .linkwrapper {
+       align-items: center;
+       justify-content: center;
+    }
+    .sidebarlink > div:first-of-type {
+       flex-direction: column;
+       height: 100%;
+    }
+    .sidebarlink.activelink {
+       background-color: transparent;
+       color: var(--theme-color);
+    }
+    .sidebarlink:hover, .linkwrapper.active, .linkwrapper:hover {
+       background-color: transparent;
+    }
+    .sidebarlink.activelink i, .sidebarlink.activelink span {
+       color: var(--theme-color);
+    }
+    .dashboardsidebar .sidebarlink {
+ 
+    }
+    .overviewblocks {
+       grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    }
+ }
+ @media (max-width: 500px) {
+    .sidebarlink span, .sidebarlink i {
+       font-size: 13px;
+    }
+    .dashboardcontainer .dashboardsidebar {
+       padding: 10px;
+    }
+ 
+ }
+ @media (max-width: 360px) {
+    .sidebarlink span, .sidebarlink i {
+       font-size: 12px;
+    }
+ }

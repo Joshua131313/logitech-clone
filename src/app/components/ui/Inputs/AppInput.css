@@ -1,0 +1,11 @@
+.auth-input-cont span {
+    color: var(--gray-text);
+    font-size: 14px;
+}
+.app-input .right-icon {
+    right: 5%;
+    color: var(--theme-color);
+}
+.app-input i {
+    transition: all 0.3s;
+}
