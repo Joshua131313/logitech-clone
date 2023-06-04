@@ -13,7 +13,7 @@ const ModalHeader = (props: Props) => {
 
     return (
         <div className={`modal-header flex-row sb ac`}>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             <i 
                 onClick={()=> setModal(false)}
                 className='fal fa-times' 

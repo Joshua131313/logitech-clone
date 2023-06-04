@@ -138,3 +138,10 @@ body .badge-icon {
     height: 20px;
     margin: 0 20px;
 }
+.account-modal {
+    width: 400px;
+    max-width: 90%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--overlay-shadow);
+}

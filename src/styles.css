@@ -43,7 +43,8 @@ body {
   --green-bg: #c8ffca;
   --yellow: #f1c40f;
   --yellow-bg: rgb(255, 255, 181);
-  --overlay: rgba(0, 0, 0, 0.5);
+  --overlay: rgba(0, 0, 0, 0.527);
+  --overlay-shadow: 10px 10px 20px 3px rgb(80, 80, 80);
   --scale-factor: 0.97;
   --nav-height: 55px;
   --card-shadow-hover: 0 2px 4px 1px rgba(0,0,0,.1);
