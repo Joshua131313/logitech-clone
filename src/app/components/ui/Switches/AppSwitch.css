@@ -73,6 +73,6 @@
     color: var(--light-gray-text);
     margin-top: 3px;
 }
-.switch-container {
+.app-switch {
   justify-content: space-between;
 }

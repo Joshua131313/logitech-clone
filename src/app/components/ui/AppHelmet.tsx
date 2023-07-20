@@ -9,7 +9,7 @@ const AppHelmet = (props: Props) => {
     const {title} = props
     return (
         <Helmet>
-            <title>{title}</title>
+            <title>{title} | Logi Options+</title>
         </Helmet>
     );
 

@@ -6,17 +6,19 @@ import ImgLoaded from '../ImgLoaded/ImgLoaded';
 import './DevicePreview.css'
 
 export interface Props {
-    device: IDevice
+    device: IDevice;
+    link: string;
 }
 
 const DevicePreview = (props: Props) => {
     const {
-        device
+        device,
+        link
     } = props
 
     return (
         <div className={`device-preview flex-col`}>
-            <Link to={''}>
+            <Link to={link}>
                 <ImgLoaded 
                     src={device.src} 
                 />

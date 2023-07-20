@@ -9,20 +9,24 @@ interface Props {
   isLink?: boolean;
   link?: string;
   className?: string;
+  showEmail?: boolean;
 }
 
 export const User: React.FC<Props> = (props) => {
-  const {showName= true, isLink, link='/my-account', className} = props
+  const {showName = true, showEmail = false, isLink, link='/my-account', className} = props
   let El = (isLink || !auth.currentUser) ? Link : 'div'
 
   return (
-    <El to={auth.currentUser ? link : '/login'} className={`${className} user flex-row ac app-icon`} >
+    <El to={auth.currentUser ? link : '/login'} className={`${className} user flex-row ac`} >
       {auth.currentUser && auth.currentUser.photoURL ?
           <ImgLoaded src={auth.currentUser.photoURL}/>
           :
           <i className='fal fa-user'></i>
       }
-     {showName &&  <span>{auth?.currentUser?.displayName}</span>}
+     <div className="flex-col">
+      {showName &&  <span className='user-name'>{auth?.currentUser?.displayName}</span>}
+      {showEmail &&  <span className='user-email'>{auth?.currentUser?.email}</span>}
+     </div>
     </El>
   )
 }

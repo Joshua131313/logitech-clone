@@ -7,6 +7,8 @@ import AppTooltip from 'app/components/ui/AppTooltip/AppTooltip';
 import { getTimeofDay } from 'app/utils/dateUtils';
 import { Link } from 'react-router-dom';
 import AppModal from 'app/components/ui/AppModal/AppModal';
+import AppSwitch from 'app/components/ui/Switches/AppSwitch';
+import AccountModal from 'app/components/ui/AppModal/AccountModal';
 
 
 interface Props {
@@ -32,6 +34,16 @@ const Navbar = (props: Props) => {
                         variant='secondary'
                     />
                 </Link>
+                <Link
+                    to={'smart-actions'}
+                >
+                    <AppButton 
+                        direction='reverse'
+                        text='SMART ACTIONS'
+                        icon='fa fa-redo'
+                        variant='secondary'
+                    />
+                </Link>
                 <div className="divider"></div>
                 <AppTooltip
                     tooltipRender='Account'
@@ -43,12 +55,12 @@ const Navbar = (props: Props) => {
                         }}
                     >
                         <User 
-                            className='nav-user'
+                            className='nav-user app-icon'
                             showName={false}
                         />
                     </div>
                 </AppTooltip>
-                <AppTooltip 
+                <AppTooltip  
                     tooltipRender='Settings'
                     anchorSelect='.fa-cog'
                 >
@@ -56,16 +68,10 @@ const Navbar = (props: Props) => {
                 </AppTooltip>
             </div>
         </div>
-        <AppModal 
-            modal={showAccountModal}
-            setModal={setShowAccountModal}
-            modalTitle='Account'
-            className='account-modal'
-        >
-            <User 
-
-            />
-        </AppModal>
+        <AccountModal 
+            showModal={showAccountModal}
+            setShowModal={setShowAccountModal}
+        />
         </>
     );
 };

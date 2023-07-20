@@ -21,7 +21,8 @@ const AppModal = (props: Props) => {
 
     return (
         <>
-            <div className='modal-screen' />
+            {modal && <div className='modal-screen' />}
+            {modal && 
             <div className={`app-modal ${className}`} {...rest}>
                 {
                     modalTitle &&
@@ -34,6 +35,7 @@ const AppModal = (props: Props) => {
                     {props.children}
                 </div>
             </div>
+            }
         </>
     )
 }

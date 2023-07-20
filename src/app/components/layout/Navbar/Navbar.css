@@ -145,3 +145,63 @@ body .badge-icon {
     overflow: hidden;
     box-shadow: var(--overlay-shadow);
 }
+.account-modal {
+}
+.account-modal .modal-details {
+    background-color: var(--plain-bg);
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+}
+.account-modal .user {
+    justify-content: flex-start;
+    gap: 20px;
+    cursor: auto;
+    margin: 15px 0;
+}
+.account-modal .user .img-loaded {
+    width: 50px;
+    height: 50px;
+}
+.account-modal .user span {
+    font-weight: bold;
+}
+.account-modal .user .user-email {
+    font-weight: lighter;
+    font-size: 13px;
+    margin-top: 5px;
+    color: var(--gray-text);
+}
+.account-modal .app-button {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+}
+.account-modal .app-button:first-of-type {
+    margin-top: 15px;
+}
+.account-modal .app-switch {
+    flex-direction: row;
+    align-items: center;
+}
+.account-modal .app-switch span {
+    font-weight: bold;
+}
+.account-modal .app-switch .switchdiv {
+    transform: scale(0.6);
+}
+.account-modal .info {
+    font-size: 13px;
+    color: var(--gray-text);
+}
+.account-modal .info a {
+    color: var(--theme-color);
+    font-weight: bold;
+}
+.account-modal .info a:hover {
+    color: var(--theme-color-hover);
+}

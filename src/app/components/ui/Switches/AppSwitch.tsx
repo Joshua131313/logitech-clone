@@ -11,7 +11,7 @@ const AppSwitch: React.FC<Props> = (props) => {
   const { checked, setChecked, text } = props;
 
   return (
-    <div className="switch-container flex-col">
+    <div className="app-switch flex-col">
       {text && <span>{text}</span>}
       <div className="switchdiv">
         <label className="form-switch">

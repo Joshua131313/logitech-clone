@@ -1,5 +1,5 @@
 import { Timestamp } from 'firebase/firestore';
-import { TCompact, TTheme, TProvider, TNotificationType } from './dbTypes';
+import { TCompact, TTheme, TProvider, TNotificationType, IMouseTypes } from './dbTypes';
 export interface IDefaultDocData {
     createdBy: string;
     date: Timestamp;
@@ -43,4 +43,34 @@ export interface IUploadedFile {
     },
     disposition?: string;
     content?: string;
+}
+export interface IApp {
+    logo: string;
+    customSettings: IMouseButtonsSettings | IMousePointScrollSettings
+}
+export interface IMouseButtonsSettings {
+    middleButton: 'middle-button' | string;
+    forward: 'forward' | string;
+    back: 'back' | string;
+    [otherOptions: string] : unknown;
+}
+export interface IMousePointScrollSettings {
+    scrollWheel: {
+        direction: 'inverted' | 'standard';
+        smoothScroll: boolean;
+    }
+    horizontalScrolling: boolean;
+    pointerSpeed: number;
+    [otherOptions: string] : unknown;
+}
+export interface IMouse {
+    id: IMouseTypes;
+    buttons: {
+        settings: IMouseButtonsSettings;
+        customSettings: IApp[]
+    };
+    pointScroll: {
+        settings: IMousePointScrollSettings;
+        customSettings: IApp[]
+    }
 }

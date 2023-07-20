@@ -2,7 +2,7 @@ import { IThemeMode, ISelectOption, IPalette } from "app/types/uiTypes/uiInterfa
 
 export const defaultPalette: IPalette = {
     themeColor: '#814efa',
-    themeColorHover: '#814efa',
+    themeColorHover: '#6039b2',
     lightThemeBg: '#f9f6ff',
     secondColor: '#e6dcfe',
     thirdColor: '#e6dcfe',
@@ -51,7 +51,7 @@ export const darkModeColors: IThemeMode = {
 }
 export const lightModeColors : IThemeMode = {
     borderColor: '#e4ecfb',
-    grayText: '#696e93',
+    grayText: '#505253',
     lightGrayText: 'rgb(134, 134, 134)',
     lightShadow: '0px 0px 7px 1px rgb(238, 238, 238)',
     plainBg: '#fbfbfb',
